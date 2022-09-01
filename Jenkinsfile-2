@@ -15,7 +15,7 @@ pipeline {
       }
       steps {
         sh 'node --version'
-        archiveArtifacts artifacts: 'module/dist/**/*.zip', followSymlinks: false
+        archiveArtifacts artifacts: '\'**/*.jar', followSymlinks: false
       }
        
     }
